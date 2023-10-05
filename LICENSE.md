@@ -1,0 +1,1 @@
+IITM-HeTra: Dataset for Vehicle Detection in Heterogeneous Traffic Scenarios is under [GNU GPL 2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) license.
