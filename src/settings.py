@@ -15,7 +15,7 @@ from dataset_tools.templates import (
 ##################################
 PROJECT_NAME: str = "IITM-HeTra"
 PROJECT_NAME_FULL: str = "IITM-HeTra: Dataset for Vehicle Detection in Heterogeneous Traffic Scenarios"
-HIDE_DATASET = True  # set False when 100% sure about repo quality
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
