@@ -128,11 +128,11 @@ for ann in ann_pathes:
         ann_xml_dict = xmltodict.parse(ann_xml_content)
         if type(ann_xml_dict["annotation"]["object"]) == dict:
             if ann_xml_dict["annotation"]["object"]["name"] not in oc_dict.keys():
-                oc_dict[ann_xml_dict["annotation"]["object"]["name"]] = sly.ObjClass(ann_xml_dict["annotation"]["object"]["name"], sly.Rectangle)
+                oc_dict[ann_xml_dict["annotation"]["object"]["name"]] = sly.ObjClass(ann_xml_dict["annotation"]["object"]["name"].lower(), sly.Rectangle)
         else:
             for obj in ann_xml_dict["annotation"]["object"]:
                 if obj["name"] not in oc_dict.keys():
-                    oc_dict[obj["name"]] = sly.ObjClass(obj["name"], sly.Rectangle)
+                    oc_dict[obj["name"]] = sly.ObjClass(obj["name"].lower(), sly.Rectangle)
 
 
 

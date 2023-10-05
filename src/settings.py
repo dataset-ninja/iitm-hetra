@@ -21,8 +21,8 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.GNU_GPL_v2()
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.TrafficMonitoring(), Domain.VehicleDetection()]
-CATEGORY: Category = Category.Surveillance(extra=Category.EnergyAndUtilities())
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.Surveillance(), Domain.VehicleDetection()]
+CATEGORY: Category = Category.Surveillance()
 
 CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
