@@ -57,6 +57,7 @@ REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
 
 CITATION_URL: Optional[str] = None
 AUTHORS: Optional[List[str]] = ["Deepak Mittal", "Avinash Reddy", "Gitakrishnan Ramadurai", "Kaushik Mitra", "Balaraman Ravindran"]
+AUTHORS_CONTACTS: Optional[List[str]] = ["deepak@cse.iitm.ac.in", "ravi@cse.iitm.ac.in", "ee12b096@ee.iitm.ac.in", "kmitra@ee.iitm.ac.in", "gitakrishnan@iitm.ac.in"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "IIT Madras, India"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://www.iitm.ac.in/"
@@ -110,6 +111,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
